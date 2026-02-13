@@ -1,0 +1,29 @@
+## Short Write-Up: Trader Performance vs Market Sentiment
+
+### Methodology
+This analysis explores the relationship between market sentiment (Fear/Greed) and trader behavior using execution-level trading data from Hyperliquid and daily Bitcoin sentiment labels. Initial data quality checks confirmed the absence of missing values and duplicates. Trade timestamps were converted and aligned with daily sentiment regimes.
+
+Key performance and behavioral metrics were engineered, including daily PnL per trader, win rate, trade frequency, long/short bias, and exposure (measured using average trade size as a proxy due to the absence of direct leverage data). Sentiment-based comparisons were conducted, and traders were segmented based on activity level, performance consistency, and exposure to capture behavioral heterogeneity.
+
+---
+
+### Key Insights
+1. **Market sentiment significantly impacts performance and risk.**  
+   Greed regimes exhibit higher win rates but also higher PnL volatility, while Fear regimes show lower win rates and increased downside risk.
+
+2. **Higher trading frequency leads to greater volatility.**  
+   Frequent traders display wider PnL distributions, suggesting overtrading and higher exposure to market noise, whereas infrequent traders show more stable outcomes.
+
+3. **Consistency and controlled exposure drive better outcomes.**  
+   Consistent winners outperform inconsistent traders in average daily PnL. High exposure traders assume greater risk through larger trade sizes, while low exposure traders demonstrate more disciplined capital allocation.
+
+---
+
+### Strategy Recommendations
+- **Risk Control During Fear Regimes:**  
+  During Fear and Extreme Fear periods, reduce position sizes and restrict excessive trading frequency, particularly for high exposure and frequent traders, to limit drawdowns.
+
+- **Selective Aggression During Greed Regimes:**  
+  During Greed periods, allow increased participation and exposure only for historically consistent traders, while maintaining strict risk limits for other segments.
+
+Overall, adapting trading strategies based on market sentiment and trader segments can improve risk-adjusted performance and lead to more sustainable trading outcomes.
